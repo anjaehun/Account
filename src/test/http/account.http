@@ -1,0 +1,24 @@
+### Get Post
+
+GET  http://localhost:8080/account?user_id=1
+Accept: application/json
+
+
+### Send POST request with json body
+POST http://localhost:8080/account
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "initialBalance": 1000000000
+}
+
+### delete account
+DELETE http://localhost:8080/account
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "accountNumber": "1000000000"
+}
+
